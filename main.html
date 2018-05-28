@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+
+	body{
+		font-family: Arial;
+		padding: 10px;
+		background: #F1F1F1;
+		background-image: url(1.jpg);
+		background-repeat: no-repeat;
+	}
+	.header{
+		background-color: hotpink;
+		text-align:center;
+		padding: 10px;
+	}
+	.header h1{
+		font size: 70px;
+		text-shadow: red;
+	}
+
+	.topnav{
+		overflow: hidden;
+		background-color: #333;
+	}
+
+
+	/* Navbar links */
+	.topnav a {
+	    float: left;
+	    display: block;
+	    color: #f2f2f2;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+
+	/* Links - change color on hover */
+	.topnav a:hover {
+	    background-color: #ddd;
+	    color: black;
+	}
+	
+	.leftcolumn {
+	    float: left;
+	    width: 75%;
+	}
+
+	.rightcolumn{
+		float: left;
+		width: 25%;
+		background-color: #F1F1F1;
+		padding-left: 20px;
+	}
+
+	.himg{
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.rightcolumn ul {
+		background-color: orange;
+	}
+
+	/*card effect*/
+	.card{
+		background-color: white;
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	/*clearing floats after columns*/
+	.row:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.footer {
+	    background-color: grey;
+	    text-align: center;
+	    padding: 20px;
+	    margin-top: 20px;
+
+	}
+	.footer h5{
+		font-size: 15px;
+	}
+
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	    .leftcolumn, .rightcolumn {   
+	        width: 100%;
+	        padding: 0;
+	    }
+	}
+
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+	    .topnav a {
+	        float: none;
+	        width: 100%;
+	    }
+	}
+
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: #333;
+	}
+
+	li {
+	    float: left;
+	}
+
+	li a, .dropbtn {
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+
+	li a:hover, .dropdown:hover .dropbtn {
+	    background-color: red;
+	}
+
+	li.dropdown {
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 160px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}	
+
+	table, th, td {
+    	border: 1px solid black;
+    	border-collapse: collapse;
+	}
+	th{
+		text-decoration-color: blue;
+	}
+	.book{
+		background-color: hotpink;
+		transform-origin: center;
+	}
+
+		
+
+	</style>
+</head>
+<body>
+<div class="header">
+	<h1>HOTEL WEB</h1>
+</div>
+
+<div class="topnav">
+	<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#Gallery.html">Gallery</a></li>
+  <li><a href="login.html">Login</a></li>
+  <li><a href="#">Accomodation</a></li>
+  <li><a href="#">Supplementary Services</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Our Services</a>
+    <div class="dropdown-content">
+      
+      <a href="#"><b>Room Services</b><ol><li>Single Bed</li><br><li>Double Bed</li><br><li>Triple Bed</li><br></ol></a>
+      <a href="#"><b>Appartment Services</b> <ol><li>One Bedroom</li><br><li>Two Bedroom</li><br><li>Three Bedroom</li></ol></a>
+      <a href="#"><b>Restaurant</b> <ol><li>Coffee Shop</li><br><li>Lounge</li><br><li>Bar</li><br><li>Outside Catering</li></ol></a>
+      <a href="#"><b>Supplementary Services</b><ol><li>Pick and Drop</li><br><li>Laundry</li><br><li>Entertainment</li><br><li>Credit & Debit Card Facilities</li></ol></a>
+	  <a href="#"><b>Conferencing and Banqueting</b></a>
+	  <a href="#"><b>Accomodation</b></a>
+
+      
+    </div>
+  </li>
+</ul>
+</div>
+
+<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>Title</h2>
+			<h5>Title desc, May 5,2018</h5>
+			<div class="himg" style="height: 200px"> Image</div>
+			<p> Our group project</p>
+			<p>A hotel website</p>
+		</div>
+		<div class="card">
+			<h2>group</h2>
+			<h5>mine and our group</h5>
+			<div class="hing">M Image</div>
+			<p>hvasgb</p>
+			<p>sgsrg</p>
+		</div>
+	</div>
+	<div class="rightcolumn">
+		<div class="card">
+			<h2>About the Hotel</h2>
+			<div class="himg" style="height: 100px;">Image</div>
+			<p><h2><b><u>The Services We Offer</u></b></h2>
+				<ul><li><b>Room Services</b><ol><li>Single Bed</li><br>
+					<li>Double Bed</li><br>
+					<li>Triple Bed</li><br></ol></li></b>
+					<li><b>Appartment Services</b>
+						<ol><li>One Bedroom</li><br><li>Two Bedroom</li><br>
+							<li>Three Bedroom</li><br></ol></li>
+					<li><b>Restaurant</b><ol><li>Coffee Shop</li><br>
+						<li>Lounge</li><br>
+						<li>Bar</li><br>
+						<li>Outside <br>Catering</li><br></ol></li>
+					<li><b>Supplementary Services</b><ol><li>Pick & Drop</li><br>
+						<li>Laundry</li><br>
+						<li>Entertainment</li><br>
+						<li>Credit and Debit Card Facilities</li><br></ol></li>
+					<li><b>Conferencing and Banqueting</b></li>
+					<li><b>Accomodation</b></li>
+					<li><b>We also have services at a cheaper rate</b>
+						<table>
+
+							<thead>
+								<tr>
+									<th>Week(s)</th>
+									<th>% Off</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>One Week</td>
+									<td>10%</td>
+								</tr>
+								<tr><td>Two Weeks</td><td>15%</td></tr>
+								<tr><td>Three Weeks</td><td>25%</td></tr>
+								<tr><td>Four Weeks and above</td><td>35%</td></tr>
+							</tbody>
+						</table>
+						</li>
+				</ul>
+			</p>
+		</div><br>
+		<div class="card">
+			<h3>Book a Room</h3>
+			
+		<form class="book">
+			<div class="time">
+				<b>First Name:</b><br>
+			<input type="text" name="First Name"><br>
+			<b>Last name:</b><br>
+			<input type="text" name="Last Name"><br>
+			<b>ID Number/Passport Number:</b><br>
+			<input type="Number" name="ID Number or Passport Number"><br>
+			<b>Please select your Gender</b>
+			<br><input type="radio" name="gender" value="male checked"><b>Male</b><br>
+			<input type="radio" name="gender" value="Female"> <b>Female</b><br>
+
+
+				<b>Check-in</b>
+				<input type="date" name="Check-in"><br>
+				<b>Check-out</b>
+				<input type="date" name="Check-out"><br>
+				Please select the number of adults, children(if any) and the number of rooms you are booking entry for.<br>
+				<select name="Adults">
+					<option>1 adult</option>
+					<option>2 adults</option>
+					<option>3 adults</option>
+					<option>4 adults</option>
+					<option>5 adults</option>
+					<option>6 adults</option>
+					<option>7 adults</option>
+					<option>8 adults</option>
+					<option>9 adults</option>
+					<option>10 adults</option>
+					<option>11adults</option>
+					<option>12adults</option>
+				</select>
+
+				<select name="No Children">
+					<option>No Children</option>
+					<option>1 Child</option>
+					<option>2 Children</option>
+					<option>3 Children</option>
+					<option>4 Children</option>
+					<option>5 Children</option>
+					<option>6 Children</option>
+					<option>7 Children</option>
+					<option>8 Children</option>
+					<option>9 Children</option>
+					<option>10 Children</option>
+
+				</select>
+
+				<select name="Rooms">
+					<option>1 room</option>
+					<option>2 rooms</option>
+					<option>3 rooms</option>
+					<option>4 rooms</option>
+					<option>5 rooms</option>
+					<option>6 rooms</option>
+					<option>7 rooms</option>
+					<option>8 rooms</option>
+					<option>9 rooms</option>
+				</select><br>
+				
+				<input type="radio" name="reason" value="I am travelling for work">I/we are travelling for work<br>
+				
+				<input type="radio" name="reason" value="I am travelling for leisure">I/we are travelling for leisure<br>
+				<input type="Submit" value="Submit">
+				<input type="Reset" >
+			</div>
+
+			
+			<form action="/index.html" method="post">
+
+	</form>
+
+
+
+
+		</div>
+			<div class="card">
+				<h3>Follow me</h3>
+				<p>fa</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h2>Summary</h2>
+
+
+		<i><U><b><h5>Join Us</h5></b></U></i>
+		<p>facebook</p>
+		<p>twitter</p>
+		<p>instagram</p>
+		
+		<i><u><b><h5>Mode of Payment</h5></b></u></i>
+		<p>cash</p>
+		<p>mpesa</p>
+		<p>visa</p>
+	</div>
+
+
+
+</body>
+</html>
+
