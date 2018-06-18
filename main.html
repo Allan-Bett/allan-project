@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title></title>
+
+	<!link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<style type="text/css">
 	*{
 		box-sizing: border-box;
@@ -22,6 +26,8 @@
 	.header h1{
 		font size: 70px;
 		text-shadow: red;
+		text-shadow: 3px 2px red;
+
 	}
 
 	.topnav{
@@ -56,16 +62,24 @@
 		width: 25%;
 		background-color: #F1F1F1;
 		padding-left: 20px;
+
 	}
 
+
 	.himg{
-		background-color: #aaa;
+		background-color: #aab;
 		width: 100%;
 		padding: 20px;
 	}
 
+	.ahtl{
+		background-size: auto;
+		width: 100%;
+	}
+
 	.rightcolumn ul {
 		background-color: orange;
+		list-style-type: none;
 	}
 
 	/*card effect*/
@@ -80,6 +94,12 @@
 		content: "";
 		display: table;
 		clear: both;
+	}
+
+	.Comment{
+		background-color: cyan;
+		padding: 30px;
+		width: 100%;
 	}
 
 	.footer {
@@ -114,7 +134,7 @@
 	    margin: 0;
 	    padding: 0;
 	    overflow: hidden;
-	    background-color: #333;
+	    //background-color: #333;
 	}
 
 	li {
@@ -172,6 +192,62 @@
 		transform-origin: center;
 	}
 
+	.prev,.next{
+		cursor: pointer;
+		position: absolute;
+		top:40%;
+		width: auto;
+		padding: 16px;
+		margin-top: -50px;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		-webkit-user-select:none;
+	}
+
+	input[type=button], input[type=submit], input[type=reset] {
+		    background-color: #4CAF50;
+		    border: none;
+		    color: white;
+		    padding: 16px 32px;
+		    text-decoration: none;
+		    margin: 4px 2px;
+		    cursor: pointer;
+		}
+		.f1{
+			float: left;
+			width: 25%;
+			background-color: grey;
+			padding-left: 20px;
+			height: 300px;
+		}
+
+		.f2{
+			float: left;
+			width: 25%;
+			background-color: grey;
+			padding-left: 20px;
+			height: 300px;
+		}
+		.f3{
+			float: left;
+			width: 25%;
+			background-color: grey;
+			padding-left: 20px;
+			height: 300px;
+		}
+		.f4{
+			float: left;
+			width: 25%;
+			background-color: grey;
+			padding-left: 20px;
+			height: 300px;
+		}
+
+
+
 		
 
 	</style>
@@ -181,21 +257,23 @@
 	<h1>HOTEL WEB</h1>
 </div>
 
+
 <div class="topnav">
 	<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="#Gallery.html">Gallery</a></li>
+  <li><a href="index.html">Group Info</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
   <li><a href="login.html">Login</a></li>
   <li><a href="#">Accomodation</a></li>
   <li><a href="#">Supplementary Services</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
   <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Our Services</a>
     <div class="dropdown-content">
       
-      <a href="#"><b>Room Services</b><ol><li>Single Bed</li><br><li>Double Bed</li><br><li>Triple Bed</li><br></ol></a>
-      <a href="#"><b>Appartment Services</b> <ol><li>One Bedroom</li><br><li>Two Bedroom</li><br><li>Three Bedroom</li></ol></a>
-      <a href="#"><b>Restaurant</b> <ol><li>Coffee Shop</li><br><li>Lounge</li><br><li>Bar</li><br><li>Outside Catering</li></ol></a>
-      <a href="#"><b>Supplementary Services</b><ol><li>Pick and Drop</li><br><li>Laundry</li><br><li>Entertainment</li><br><li>Credit & Debit Card Facilities</li></ol></a>
+      <a href="#"><b>Room Services</b><ul style="list-style-type: none;" ><li>Single Bed</li><br><li>Double Bed</li><br><li>Triple Bed</li><br></ul></a>
+      <a href="#"><b>Appartment Services</b> <ul style="list-style-type: none;"><li>One Bedroom</li><br><li>Two Bedroom</li><br><li>Three Bedroom</li></ul></a>
+      <a href="#"><b>Restaurant</b> <ul style="list-style-type: none;"><li>Coffee Shop</li><br><li>Lounge</li><br><li>Bar</li><br><li>Outside Catering</li></ul></a>
+      <a href="#"><b>Supplementary Services</b><ul style="list-style-type: none;"><li>Pick and Drop</li><br><li>Laundry</li><br><li>Entertainment</li><br><li>Credit & Debit Card Facilities</li></ul></a>
 	  <a href="#"><b>Conferencing and Banqueting</b></a>
 	  <a href="#"><b>Accomodation</b></a>
 
@@ -208,11 +286,13 @@
 <div class="row">
 	<div class="leftcolumn">
 		<div class="card">
-			<h2>HOTEL WEB</h2>
+			<h2>Title</h2>
 			<h5>Title desc, May 5,2018</h5>
+			<marquee behavior="scroll" direction="left">Welcome to Hotel Web, We try to offer you with the best services as a result we value your feedback. </marquee>
 			<div class="himg" style="height: 200px"> Image</div>
 			<p> Our group project: our hotel is a 5 star hotel with state of the art services incomparable to none.With a awide variety to choose from one will be spoilt for choices to choose from.A guarranteed life time experience!! </p>
-			<p>We have several services such as accomodations, swimming and recreations activities, well furnished rooms and a dining area for the meals. </p>
+			<p> We have several services such as accomodations, swimming and recreations activities, well furnished rooms and a dining area for the meals. </p>
+			
 		</div>
 		<div class="card">
 			<h2>group</h2>
@@ -221,23 +301,64 @@
 			<p>hvasgb</p>
 			<p>sgsrg</p>
 		</div>
+		<video width="100%" height="620" controls>
+  		<source src="V1.mp4" type="video/mp4">
+  		<source src="movie.ogg" type="video/ogg">
+	</video>
+
+	Some images of the hotel <br>
+				<a target="_blank" href="1.jpg">
+					<img src="1.jpg" alt="layout" width="280px" height="auto">
+				</a>
+				<a target="_blank" href="2.jpg">
+					<img src="2.jpg" alt="Lounge" width="280px" height="auto">
+				</a>
+				<a target="_blank" href="3.jpg">
+					<img src="3.jpg" alt="Dinning" width="280px" height="auto">
+				</a>
+
+				<div class="Comment">
+					<h3>Leave your Comment here</h3>
+					<p><input type="text" size="130px" name="Comment"> <br>
+						<input type="Submit" value="Submity your Comment" name=""></p>
+						<marquee behavior="scroll" direction="left">Welcome to Hotel Web, We try to offer you with the best services as a result we value your feedback. </marquee>
+
+				</div>
+
+
+
+
 	</div>
+	
 	<div class="rightcolumn">
 		<div class="card">
 			<h2>About the Hotel</h2>
-			<div class="himg" style="height: 100px;">Image</div>
+
+			<div class="ahtl" style="height: 100px;"> Some images of the hotel <br>
+				<a target="_blank" href="1.jpg">
+					<img src="1.jpg" alt="1" width="150px" height="auto">
+				</a>
+				<a target="_blank" href="2.jpg">
+					<img src="2.jpg" alt="2" width="50px" height="auto">
+				</a>
+				<a target="_blank" href="3.jpg">
+					<img src="3.jpg" alt="3" width="50px" height="auto">
+				</a>
+
+
+			</div>
 			<p><h2><b><u>The Services We Offer</u></b></h2>
-				<ul><li><b>Room Services</b><ol><li>Single Bed</li><br>
+				<ul><li><b>Room Services</b><ul style="list-style-type: none;"><li>Single Bed</li><br>
 					<li>Double Bed</li><br>
-					<li>Triple Bed</li><br></ol></li></b>
-					<li><b>Appartment Services</b>
-						<ol><li>One Bedroom</li><br><li>Two Bedroom</li><br>
-							<li>Three Bedroom</li><br></ol></li>
-					<li><b>Restaurant</b><ol><li>Coffee Shop</li><br>
+					<li>Triple Bed</li><br></ul></li></b><br>
+					<li><b>Appartments</b>
+						<ul style="list-style-type: none;"><li>One Bedroom</li><br><li>Two Bedroom</li><br>
+							<li>Three Bedroom</li><br></ul></li>
+					<li><b>Restaurant</b><ul style="list-style-type: none;"><li>Coffee Shop</li><br>
 						<li>Lounge</li><br>
 						<li>Bar</li><br>
-						<li>Outside <br>Catering</li><br></ol></li>
-					<li><b>Supplementary Services</b><ol><li>Pick & Drop</li><br>
+						<li>Outside <br>Catering</li><br></ul></li><br>
+					<li><b>Supplementary Services</b><ul><li>Pick & Drop</li><br>
 						<li>Laundry</li><br>
 						<li>Entertainment</li><br>
 						<li>Credit and Debit Card Facilities</li><br></ol></li>
@@ -272,22 +393,22 @@
 		<form class="book">
 			<div class="time">
 				<b>First Name:</b><br>
-			<input type="text" name="First Name"><br>
+			<input type="text" name="First Name" placeholder="Input your first Name" required="First Name" ><br>
 			<b>Last name:</b><br>
-			<input type="text" name="Last Name"><br>
+			<input type="text" name="Last Name" placeholder="Input your Last Name" required ><br>
 			<b>ID Number/Passport Number:</b><br>
-			<input type="Number" name="ID Number or Passport Number"><br>
+			<input type="Number" name="ID Number or Passport Number" placeholder="Input your IDnumber or Passport Number" required ><br>
 			<b>Please select your Gender</b>
-			<br><input type="radio" name="gender" value="male checked"><b>Male</b><br>
+			<br><input type="radio" name="gender" value="male checked" required ><b>Male</b><br>
 			<input type="radio" name="gender" value="Female"> <b>Female</b><br>
 
 
 				<b>Check-in</b>
-				<input type="date" name="Check-in"><br>
+				<input type="date" name="Check-in" required ><br>
 				<b>Check-out</b>
-				<input type="date" name="Check-out"><br>
+				<input type="date" name="Check-out" required ><br>
 				Please select the number of adults, children(if any) and the number of rooms you are booking entry for.<br>
-				<select name="Adults">
+				<select name="Adults"  required >
 					<option>1 adult</option>
 					<option>2 adults</option>
 					<option>3 adults</option>
@@ -302,7 +423,7 @@
 					<option>12adults</option>
 				</select>
 
-				<select name="No Children">
+				<select name="No Children" required >
 					<option>No Children</option>
 					<option>1 Child</option>
 					<option>2 Children</option>
@@ -317,7 +438,7 @@
 
 				</select>
 
-				<select name="Rooms">
+				<select name="Rooms" required >
 					<option>1 room</option>
 					<option>2 rooms</option>
 					<option>3 rooms</option>
@@ -329,9 +450,9 @@
 					<option>9 rooms</option>
 				</select><br>
 				
-				<input type="radio" name="reason" value="I am travelling for work">I/We are travelling for work<br>
+				<input type="radio" name="reason" value="I am travelling for work">I/we are travelling for work<br>
 				
-				<input type="radio" name="reason" value="I am travelling for leisure">I/We are travelling for leisure<br>
+				<input type="radio" name="reason" value="I am travelling for leisure">I/we are travelling for leisure<br>
 				<input type="Submit" value="Submit">
 				<input type="Reset" >
 			</div>
@@ -341,31 +462,62 @@
 
 	</form>
 
+	<input type="button" onclick="alert('Please fill in the forms so as to ensure your online booking is sucessfull.Make sure you submit the information fed so as to make them saved')" value="For Help Click Me!">
+	<button type="button"
+		onclick="document.getElementById('ntime').innerHTML = Date()">
+		Click me to display Date and Time.</button>
 
+		<p id="ntime"></p>
 
 
 		</div>
-			<div class="card">
-				<h3>Follow me</h3>
-				<p>fa</p>
-			</div>
+			
 		</div>
+
 	</div>
 
 	<div class="footer">
-		<h2>Summary</h2>
+		<h2></h2>
 
-
-		<i><U><b><h5>Join Us</h5></b></U></i>
+	<div class="f1">
+		<i><U><b><h5>Follow Us</h5></b></U></i>
+		<p>Google</p>
 		<p>facebook</p>
 		<p>twitter</p>
 		<p>instagram</p>
-		
+		<p>Linkedin</p>
+	</div>
+
+	<div class="f2">
 		<i><u><b><h5>Mode of Payment</h5></b></u></i>
 		<p>cash</p>
-		<p><b>mpesa:</b>Lipa na mpesa no 112332 </p>
+		<p>mpesa</p>
 		<p>visa</p>
+
 	</div>
+
+	<div class="f3">
+		<i><u><b><h5>Support</h5></b></u></i>
+		<p>Contact Support</p>
+		<a href="#" class="fa fa-phone"></a>+254714250272 &nbsp;<br/>
+		<a href="#" class="fa fa-google"></a>+254 &nbsp;<br/>
+		<a href="#" class="fa fa-twitter"></a>+254 &nbsp;<br/>
+		<a href="#" class="fa fa-snapchat-ghost"></a>+254 &nbsp;<br/>
+		<a href="#" class="fa fa-facebook"></a>+254 &nbsp;<br/>
+		<a href="#" class="fa fa-instagram"></a>+254 &nbsp;<br/>
+		
+
+		<p><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></p>
+
+	</div>
+	<div class="f4">
+		
+	</div>
+
+			
+		
+	</div>
+	
 
 
 
