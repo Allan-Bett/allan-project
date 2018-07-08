@@ -24,18 +24,18 @@
 
 <h2>Our Contacts</h2><br>
 
-Telephone No. +254714250272 / +254789072229
+Customer Care No. +254714250272 / +254789072229
 <br><br>
 Email: allan.bett@strathmore.edu
 
   <style type="text/css">
     footer{
-      background-color: skyblue;
+      background-color:skyblue;
       padding: 20px;  
     }
     header{
     	text-align: center; 
-    	background-color: crimson;
+    	background-color:crimson;
     }
   </style>
   <footer>
