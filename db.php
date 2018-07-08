@@ -36,7 +36,6 @@ $gender = mysqli_real_escape_string($link,$_REQUEST['gender']);
 $password = mysqli_real_escape_string($link, $_REQUEST['password']);
 
 
-
 } 
 
 // attempt insert query execution
